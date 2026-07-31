@@ -40,6 +40,61 @@ Desarrollar un sistema de información para la gestión de los procesos producti
 <details>
 <summary> <h2>🔎 6. Análisis</h2></summary>
 
+<h3>📝 Requerimientos Funcionales</h3>
+
+### Gestión de usuarios
+
+- Inicio de sesión.
+- Administración de usuarios.
+- Asignación de roles.
+
+### Gestión de clientes
+
+- Registrar clientes.
+- Editar clientes.
+- Eliminar clientes.
+- Consultar clientes.
+- Asignar precios personalizados.
+
+### Gestión de productos
+
+- Registrar productos.
+- Registrar categorías.
+- Registrar múltiples presentaciones.
+- Actualizar precios.
+- Consultar productos.
+
+### Gestión de inventario
+
+- Registrar entradas.
+- Registrar salidas.
+- Ajustes de inventario.
+- Consultar existencias.
+- Historial de movimientos.
+
+### Gestión de ventas
+
+- Crear ventas.
+- Buscar clientes.
+- Aplicar precios correspondientes.
+- Imprimir factura.
+- Consultar historial.
+
+### Reportes
+
+- Ventas por fecha.
+- Ventas por cliente.
+- Inventario actual.
+- Productos más vendidos.
+- Productos con bajo stock.
+
+<h3>📝 Requerimientos NO Funcionales</h3>
+
+- Interfaz sencilla e intuitiva.
+- Respuesta rápida.
+- Escalabilidad.
+
+
 <h3>👥 Actores del Sistema</h3>
 
 <table>
@@ -103,58 +158,5 @@ Desarrollar un sistema de información para la gestión de los procesos producti
 </tr>
 </table>
 
-<h3>📝 Requerimientos Funcionales</h3>
-
-### Gestión de usuarios
-
-- Inicio de sesión.
-- Administración de usuarios.
-- Asignación de roles.
-
-### Gestión de clientes
-
-- Registrar clientes.
-- Editar clientes.
-- Eliminar clientes.
-- Consultar clientes.
-- Asignar precios personalizados.
-
-### Gestión de productos
-
-- Registrar productos.
-- Registrar categorías.
-- Registrar múltiples presentaciones.
-- Actualizar precios.
-- Consultar productos.
-
-### Gestión de inventario
-
-- Registrar entradas.
-- Registrar salidas.
-- Ajustes de inventario.
-- Consultar existencias.
-- Historial de movimientos.
-
-### Gestión de ventas
-
-- Crear ventas.
-- Buscar clientes.
-- Aplicar precios correspondientes.
-- Imprimir factura.
-- Consultar historial.
-
-### Reportes
-
-- Ventas por fecha.
-- Ventas por cliente.
-- Inventario actual.
-- Productos más vendidos.
-- Productos con bajo stock.
-
-<h3>📝 Requerimientos NO Funcionales</h3>
-
-- Interfaz sencilla e intuitiva.
-- Respuesta rápida.
-- Escalabilidad.
 
 </details>
