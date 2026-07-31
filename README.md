@@ -1,73 +1,109 @@
 <h1>Sistema para charcuteria 🥩</h1>
 
-Sistema de información para una microempresa dedicada a la comercialización de productos cárnicos, enfocado en la gestión de clientes, inventario, ventas y facturación.
+Sistema de información para una microempresa dedicada a la producción y comercialización de productos cárnicos, enfocado en la gestión de producción, recetas, materias primas, inventario, clientes, ventas y facturación, permitiendo centralizar la información y optimizar los procesos operativos y administrativos.
 
 ---
 
 <details>
-<summary><strong>📌 1. Justificación </strong></summary>
+<summary><h2>📌 1. Justificación </h2></summary>
 
-La microempresa desarrolla sus actividades operativas y comerciales de forma manual
+Actualmente, la microempresa no dispone de una herramienta tecnológica que integre la gestión de sus procesos productivos, comerciales y administrativos. La empresa se dedica tanto a la producción como a la comercialización de productos; sin embargo, la información relacionada con clientes, productos, inventario, ventas, producción y recetas se administra mediante facturas físicas y registros manuales, generando una alta dependencia de procesos no automatizados. Esta situación dificulta la centralización de la información, el acceso oportuno a los datos y la trazabilidad de las operaciones realizadas en las diferentes áreas del negocio.
 
+Debido a la ausencia de una solución tecnológica, se dificulta el control del inventario de materias primas y productos terminados, así como la administración de ingresos y gastos. Además, la empresa no cuenta con mecanismos para gestionar las recetas de producción, controlar el consumo de materias primas ni realizar un seguimiento de los procesos productivos. Como consecuencia, se presentan ineficiencias operativas, inconsistencias en la información, mayor probabilidad de errores y una capacidad limitada para generar reportes confiables que apoyen la toma de decisiones estratégicas. En este contexto surge la siguiente pregunta de investigación: ¿Cómo optimizar la gestión de los procesos productivos, comerciales y administrativos de una microempresa dedicada a la producción y comercialización de productos mediante la automatización y centralización de la información?
+
+Como respuesta a esta problemática, se propone desarrollar un sistema de información que centralice y automatice la gestión de clientes, productos, recetas de producción, materias primas, inventario, listas de precios, producción, ventas y facturación, mediante una base de datos que garantice la integridad, disponibilidad y trazabilidad de la información en todas las áreas del negocio. La implementación de esta solución permitirá mejorar el control de los procesos, reducir errores asociados a la gestión manual, optimizar el manejo del inventario y facilitar la generación de reportes e indicadores que apoyen la toma de decisiones de manera oportuna y confiable.
+</details>
+
+---
+
+<details>
+<summary><h2>🎯 2. Objetivo general</h2></summary>
+
+Desarrollar un sistema de información para la gestión de los procesos productivos, comerciales y administrativos de una microempresa, mediante la automatización y centralización de la información
 
 </details>
 
 ---
 
 <details>
-<summary><strong>🎯 3. Objetivo general</strong></summary>
+<summary><h2>✅ 4. Objetivos específicos</h2></summary>
 
-Desarrollar un sistema de información que permita gestionar clientes, productos, precios, ventas, facturación e inventario de una microempresa, optimizando sus procesos administrativos y comerciales mediante la digitalización de la información.
-
-</details>
-
----
-
-<details>
-<summary><strong>✅ 4. Objetivos específicos</strong></summary>
-
-- Analizar los procesos actuales de la empresa para identificar las necesidades y requerimientos del sistema.
-- Diseñar una base de datos que almacene la información de clientes, productos, precios, inventario y ventas.
-- Desarrollar módulos para la gestión de clientes, productos, precios, inventario y facturación.
-- Implementar un sistema de control de inventario que registre entradas, salidas y existencias de productos.
-- Permitir la asignación de listas de precios específicas para clientes mayoristas.
-- Generar reportes de ventas, inventario y clientes.
-- Evaluar el funcionamiento del sistema mediante pruebas.
+1. **Analizar** los procesos productivos, comerciales y administrativos de la microempresa para identificar el flujo de trabajo actual, comprender su funcionamiento y establecer los requerimientos del sistema.
+2. **Diseñar** el modelo de datos y la interfaz del sistema de acuerdo con los requerimientos identificados durante la etapa de análisis.
+3. **Construir** el sistema de información con base en el diseño propuesto, integrando los módulos de producción, recetas, inventario, clientes, ventas y facturación.
+4. **Desplegar** el sistema de información en el entorno de la microempresa para su puesta en funcionamiento y validación.
 
 </details>
 
 ---
 
 <details>
-<summary><strong>📦 5. Alcance</strong></summary>
+<summary> <h2>🔎 6. Análisis</h2></summary>
 
-El sistema permitirá:
+<h3>👥 Actores del Sistema</h3>
 
-- Registrar clientes.
-- Clasificar clientes.
-- Asignar listas de precios.
-- Registrar productos.
-- Manejar diferentes presentaciones.
-- Registrar proveedores.
-- Registrar compras.
-- Actualizar inventario.
-- Registrar ventas.
-- Generar facturas.
-- Consultar historial de ventas.
-- Buscar facturas.
-- Controlar existencias.
-- Emitir alertas de inventario.
-- Generar reportes.
-- Gestionar usuarios.
+<table>
+<tr>
 
-No se contempla la integración con la DIAN, facturación electrónica ni pagos en línea en esta primera versión.
+<td align="center" width="50%">
+
+<details>
+
+<summary>
+
+<h3>👨‍💼 Administrador</h3>
+
+</summary>
+
+<br>
+
+**Permisos**
+
+- 👥 Gestión de usuarios
+- 🏭 Gestión de producción
+- 🧾 Gestión de recetas
+- 📦 Gestión de inventario
+- 🥩 Gestión de productos
+- 🚚 Gestión de proveedores
+- 💲 Gestión de precios
+- 🛒 Gestión de ventas
+- 🧾 Facturación
+- 📊 Reportes
+- ⚙️ Configuración
 
 </details>
 
----
+</td>
+
+<td align="center" width="50%">
 
 <details>
-<summary><strong>⚙️ 6. Requerimientos funcionales</strong></summary>
+
+<summary>
+
+<h3>🛒 Vendedor</h3>
+
+</summary>
+
+<br>
+
+**Permisos**
+
+- 👥 Gestión de clientes
+- 🛒 Registrar ventas
+- 🧾 Generar facturas
+- 📦 Consultar inventario
+- 🥩 Consultar productos
+- 📋 Historial de ventas
+
+</details>
+
+</td>
+
+</tr>
+</table>
+
+<h3>📝 Requerimientos Funcionales</h3>
 
 ### Gestión de usuarios
 
@@ -115,121 +151,10 @@ No se contempla la integración con la DIAN, facturación electrónica ni pagos 
 - Productos más vendidos.
 - Productos con bajo stock.
 
-</details>
-
----
-
-<details>
-<summary><strong>🔒 7. Requerimientos no funcionales</strong></summary>
+<h3>📝 Requerimientos NO Funcionales</h3>
 
 - Interfaz sencilla e intuitiva.
 - Respuesta rápida.
-- Seguridad mediante autenticación.
-- Respaldo de información.
-- Base de datos relacional.
-- Facilidad de mantenimiento.
 - Escalabilidad.
-
-</details>
-
----
-
-<details>
-<summary><strong>👥 8. Actores del sistema</strong></summary>
-
-- Administrador.
-- Vendedor.
-- Auxiliar de inventario.
-- Gerente.
-
-</details>
-
----
-
-<details>
-<summary><strong>📋 9. Casos de uso principales</strong></summary>
-
-- Iniciar sesión.
-- Registrar cliente.
-- Registrar producto.
-- Registrar proveedor.
-- Registrar compra.
-- Registrar venta.
-- Generar factura.
-- Consultar inventario.
-- Modificar precios.
-- Consultar historial de ventas.
-- Generar reportes.
-- Administrar usuarios.
-
-</details>
-
----
-
-<details>
-<summary><strong>🧩 10. Módulos del sistema</strong></summary>
-
-1. Autenticación.
-2. Gestión de usuarios.
-3. Gestión de clientes.
-4. Gestión de proveedores.
-5. Gestión de productos.
-6. Gestión de categorías.
-7. Gestión de presentaciones.
-8. Gestión de precios.
-9. Gestión de compras.
-10. Gestión de inventario.
-11. Gestión de ventas.
-12. Facturación.
-13. Reportes.
-14. Configuración.
-
-</details>
-
----
-
-<details>
-<summary><strong>💻 11. Tecnologías sugeridas</strong></summary>
-
-### Frontend
-
-- HTML5
-- CSS3
-- JavaScript
-- Bootstrap
-
-### Backend
-
-- Laravel (PHP) o Django (Python)
-
-### Base de datos
-
-- MySQL o PostgreSQL
-
-### Control de versiones
-
-- Git
-- GitHub
-
-### Servidor
-
-- XAMPP
-- Apache / Nginx
-
-</details>
-
----
-
-<details>
-<summary><strong>📈 12. Beneficios esperados</strong></summary>
-
-- Reducción del uso de papel.
-- Organización centralizada de la información.
-- Control del inventario.
-- Menos errores administrativos.
-- Consulta rápida de facturas.
-- Mejor toma de decisiones.
-- Mayor productividad.
-- Escalabilidad del negocio.
 
 </details>
